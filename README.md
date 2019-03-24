@@ -6,3 +6,4 @@ how you can make changes in your pipelines.
 
 For more information, see [Modify your Pachyderm pipeline](update-pipeline.md).
 
+Link to the built Docker image: [svetlana/opencv](https://cloud.docker.com/u/svekars/repository/docker/svekars/opencv).
