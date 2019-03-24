@@ -4,7 +4,7 @@ This tutorial walks you through the steps required to update your
 Pachyderm pipeline.
 
 * This tutorial assumes that you have installed Pachyderm as described in
-[Local Intallation](https://pachyderm.readthedocs.io/en/latest/getting_started/local_installation.html)
+[Local Installation](https://pachyderm.readthedocs.io/en/latest/getting_started/local_installation.html)
 and completed the [Beginner Tutorial](https://pachyderm.readthedocs.io/en/latest/getting_started/beginner_tutorial.html).
 * You need to complete all sections on this page to successfully make
 changes in your pipeline.
