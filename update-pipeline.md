@@ -260,13 +260,13 @@ After you upload your image to your registry, you need to rerun the
 
 1. After the pipeline completes, view your image:
 
-   * On macOS, run:
+   * On macOS®, run:
 
      ```bash
      pachctl get-file edges master liberty.png | open -f -a /Applications/Preview.app
      ```
 
-   * On Linux, run:
+   * On Linux®, run:
 
      ```bash
      pachctl get-file edges master liberty.png | display
