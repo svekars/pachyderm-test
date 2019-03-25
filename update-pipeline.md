@@ -285,3 +285,14 @@ After you upload your image to your registry, you need to rerun the
 
   When you see this error message, it means that the code changes in the pipeline
   might be incorrect and causing the pipeline to fail. Double-check your changes.
+
+* The Docker VM runs out of space.
+
+  If you rebuild your image multiple time, your Docker VM might run out of
+  space quickly. To delete unused system data, use the following command:
+
+  ```
+  docker system prune
+  ```
+
+  For more information, see [Docker Documentation](https://docs.docker.com/engine/reference/commandline/system_prune/).
