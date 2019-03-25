@@ -254,7 +254,7 @@ After you upload your image to your registry, you need to rerun the
 
    **Example:**
 
-   ![Example pipeline](example-pipeline.png)
+   ![Example pipeline](example_pipeline.png)
 
 ## Troubleshooting
 
