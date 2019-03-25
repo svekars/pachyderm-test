@@ -112,11 +112,17 @@ To build a new Docker image, complete the following steps:
 
 1. Change the directory to the directory where your Dockerfile is located.
 
-1. Build a new image from the Dockerfile.
+1. Build a new image from the Dockerfile .
 
    ```bash
 
-   docker build - < Dockerfile
+   docker build -t <IMAGE>:<TAG> .
+   ```
+
+   **Example:**
+
+   ```bash
+   docker build test/opencv:latest .
    ```
 
    This operation might take some time.
@@ -168,38 +174,11 @@ DockerHub.
 
    **Example of system response:**
 
-   ```bash
-   REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-   none                none                dc97ecd2ad5f        6 minutes ago       896MB
-   ubuntu              18.04               94e814e2efa8        12 days ago         88.9MB
-   ```
-
-   The latest created image appears with a `none` tag.
-
-1. Tag your image:
-
-   ```bash
-   docker tag <IMAGE_ID>:<TAG> <REGISTRY>>
-   ```
-
-   **Example:**
-
-   ```bash
-   docker tag dc97ecd2ad5f test/opencv:latest
-   ```
-
-1. Verify that your image was successfully tagged:
-
-   ```bash
-   docker image ls
-   ```
-
-   **Example of system response:**
-
    ```bahs
    REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
    test/opencv         latest              dc97ecd2ad5f        6 minutes ago       896MB
    ubuntu              18.04               94e814e2efa8        12 days ago         88.9MB
+   ```
 
 1. Upload your image to your registry:
 
@@ -255,7 +234,7 @@ After you upload your image to your registry, you need to rerun the
 
    ```bash
    ID                               PIPELINE STARTED           DURATION           RESTART PROGRESS  DL UL STATE
-   672ea806a8d94327ad498c0fb8695bf7 edges    7 seconds ago     -                  0       0 + 0 / 1 0B 0B running
+   672ea806a8d94327ad498c0fb8695bf7 edges    7 seconds ago     -                  0       0 + 0 / 1 0B 0B success
    ```
 
 1. After the pipeline completes, view your image:
@@ -272,6 +251,10 @@ After you upload your image to your registry, you need to rerun the
      pachctl get-file edges master liberty.png | display
      ```
    The processed image must reflect the changes you applied to the pipeline.
+
+   **Example:**
+
+   ![Example pipeline](example-pipeline.png)
 
 ## Troubleshooting
 
