@@ -122,7 +122,7 @@ To build a new Docker image, complete the following steps:
    **Example:**
 
    ```bash
-   docker build test/opencv:latest .
+   docker build -t test/opencv:latest .
    ```
 
    This operation might take some time.
