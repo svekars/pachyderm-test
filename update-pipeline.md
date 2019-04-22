@@ -73,9 +73,9 @@ To verify that the pipeline is modified, complete the following steps:
 
 1. Change the `cmap` parameter. For example:
 
-  ```bash
-  cmap = 'jet'
-  ```
+   ```bash
+   cmap = 'jet'
+   ```
 
 1. Save your changes.
 
